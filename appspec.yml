@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+ - TargetService:
+     Type: AWS::ECS::Service
+     Properties:
+       TaskDefinition: "arn:aws:ecs:ap-south-1:281290702866:task-definition/bluegreen-taskdef:2"
+       LoadBalancerInfo:
+         ContainerName: "bluegreencontainer"
+         ContainerPort: 8080
