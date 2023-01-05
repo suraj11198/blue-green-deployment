@@ -19,7 +19,7 @@ const ENV = 'Production';
 const app = express();
 app.get('/', (req, res) => {
   res.statusCode = 200;
-  const msg = 'Hello from blue green deployment version:v1.4 by Vijay!';
+  const msg = 'Hello Team, This is Zero Downtime deployment version:v1.1 by SURAJ!';
   res.send(getPage(msg));
 });
 
