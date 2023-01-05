@@ -3,7 +3,7 @@ Resources:
  - TargetService:
      Type: AWS::ECS::Service
      Properties:
-       TaskDefinition: "arn:aws:ecs:ap-south-1:281290702866:task-definition/bluegreen-taskdef:2"
+       TaskDefinition: "arn:aws:ecs:us-east-2:399450877166:task-definition/zero-downtime:1"
        LoadBalancerInfo:
-         ContainerName: "bluegreencontainer"
+         ContainerName: "zero-downtime"
          ContainerPort: 8080
