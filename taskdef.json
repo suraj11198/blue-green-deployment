@@ -1,6 +1,6 @@
 {
   "ipcMode": null,
-  "executionRoleArn": "arn:aws:iam::281290702866:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::399450877166:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "dnsSearchDomains": null,
@@ -51,12 +51,12 @@
   ],
   "placementConstraints": [],
   "memory": "512",
-  "taskRoleArn": "arn:aws:iam::281290702866:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::399450877166:role/ecsTaskExecutionRole",
   "compatibilities": [
     "EC2",
     "FARGATE"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:281290702866:task-definition/bluegreen-taskdef:2",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:399450877166:task-definition/zero-downtime:1",
   "family": "bluegreen-taskdef",
   "requiresAttributes": [
     {
