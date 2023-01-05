@@ -2,9 +2,9 @@ version: 0.2
 
 env:
   variables:
-    AWS_REGION: ap-south-1 # checkfor specific region
-    AWS_ACCOUNT_ID: 281290702866
-    IMAGE_NAME: bluegreenrepo
+    AWS_REGION: us-east-2 # checkfor specific region
+    AWS_ACCOUNT_ID: 399450877166
+    IMAGE_NAME: letest
     
 phases:
   install:
@@ -22,7 +22,7 @@ phases:
       - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://127.0.0.1:2375 --storage-driver=overlay2 &
       - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com     
+      - aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 399450877166.dkr.ecr.us-east-2.amazonaws.com     
 
   build:
     commands:
